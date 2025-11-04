@@ -1,0 +1,81 @@
+---
+layout: default
+---
+		<main attr-slug="giselle-nfuto">
+			<header class="header">
+				<hgroup class="header-hgroup">
+					<h1 class="header-hgroup-h1">Corporo <br />Malala</h1>
+					<h2 class="header-hgroup-name">Hello, <span class="CSSnowrap">Giselle Nfuto</span></h2>
+
+					<div class="CSSspacer"></div>
+				</hgroup>
+				
+				<nav class="header-nav">
+					<div>
+						<span class="u-btn">&star;<span>Dashboard</span></span>
+						<span class="u-btn">&star;<span>Products Catalog</span></span>
+						<span class="u-btn">&star;<span>Payslips</span></span>
+					</div>
+
+					<span class="CSSspacer"></span>
+					
+					<div>
+						<span class="u-btn CSScentered">&star;</span>
+						<span class="u-btn CSScentered">&rarr;</span>
+					</div>
+				</nav>
+			</header>
+			
+			<section>
+				<div>
+					<div class="progress">
+						<h5 class="section-title">Progress</h5>
+						<div class="progress-bar">
+							<div class="is-done"><span class="CSScentered">1</span><span>Lead</span></div>
+							<div class="is-done"><span class="CSScentered">2</span><span>Working</span></div>
+							<div class="is-done is-here"><span class="CSScentered">3</span><span>Qualified</span></div>
+							<div><span class="CSScentered">4</span><span>Converted</span></div>
+						</div>
+					</div>
+				</div>
+				<div>AAA</div>
+				<div>VVV</div>
+				<div>
+					<div class="documents">
+						<h5 class="section-title">Documents</h5>
+						<div>{% for i in (1..4) %}
+							<div>
+								<img src="/assets/images/icon_nasa_black.png" />
+								<p>Upload the application form</p>
+							</div>{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="historique">
+						<h5 class="section-title">Historique</h5>
+						
+						<div class="historique-date">
+							<span>July</span>
+							<span>01</span><span>2025</span>
+						</div>
+						
+						<div class="historique-list"><div class="js-historique">
+							<!--{% for i in (1..8) %}
+							<div class="historique-list-item is-{% if forloop.index == 1 or forloop.index == 2 %}green{% elsif forloop.index == 3 or forloop.index == 4 or forloop.index == 5 or forloop.index == 6 %}blue{% elsif forloop.index == 7 %}red{% else %}gray{% endif %}">
+								<div>
+									<span>Sent Sales Payment</span>
+									<span>June 18, 2025</span>
+								</div>
+								<div><span>&check;</span></div>
+							</div>{% endfor %}-->
+						</div></div>
+					</div>
+				</div>
+			</section>
+			
+			<footer class="footer">
+				<p>&copy; Copyrights 2025. All rights reserved: <a href="https://corporomalala.com" class="CSSbrand CSSunderline">Corporo Malala</a>.</p>
+				<p>Read the <a class="">terms & conditions</a>, <a class="">etc</a>, <a class="">etc</a>.</p>
+			</footer>
+		</main>

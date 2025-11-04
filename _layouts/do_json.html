@@ -1,0 +1,7 @@
+---
+---
+{ {% assign vSlug = page.name | remove: '.json' %}{% for file in site.data.sales[vSlug] %}{% for data in file %}
+	"{{ data[0] }}": { {% for content in data[1] %}{% for contentHistorique in content %}{% if data[0] == "historique" or data[0] == "archives" %}
+		"{{ contentHistorique[0] }}": ["{{ contentHistorique[1][0] }}", "{{ contentHistorique[1][1] }}"]{% endif %}{% endfor %}{% if forloop.last == false %},{%endif %}{% endfor %}
+	}{% endfor %}{% if forloop.last == false %},{%endif %}{% endfor %}
+}

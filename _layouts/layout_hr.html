@@ -1,0 +1,37 @@
+---
+layout: default
+---
+		{% for i in (1..10) %}
+		<input type="checkbox" id="chbx4Nav{{ i }}" name="chbx4Nav{{ i }}" />{% endfor %}
+		<main>
+			<section class="d-cssCentered">
+				<header class="header">
+					<h1 class="header-hgroup-h1">Corporo <br />Malala</h1>
+					
+					<br /><br /><br />
+					<p>Hello Team!</p>
+				</header>
+				
+				<form class="form d-cssCentered js-form"><div>
+					<label><span>Hello, Team</span> <br />Enter your Access Code:</label>
+					<div class="form-set">
+						<input type="text" class="u-input" required />
+						<input type="submit" class="u-submit" value="&rarr;" />
+					</div>
+					
+					<span class="d-cssCentered u-btnToggle js-btnClose">&cross;</span>
+				</div></form>
+			</section>
+			
+			<nav class="nav d-cssCentered"><div>{% for file in site.data.hr %}{% assign iFile = forloop.index %}{% for data in file %}
+				<div class="nav-button">
+					<label for="chbx4Nav{{ iFile }}">{{ data[0] | replace: " ", " <br />" }}</label>
+					<p>{{ data[1] }} <span onclick="openForm(this)" title="Are you part of that team?">Login?</span><label for="chbx4Nav{{ iFile }}">&cross;</label></p>
+				</div>{% endfor %}{% endfor %}
+			</div></nav>
+			
+			<div class="u-notifications js-uNotifications">
+				<!--
+				<div>{% for i in (1..10) %}ErrorMsg {% endfor %}<span onclick="closeNotification(this)">&cross;</span></div>-->
+			</div>
+		</main>
