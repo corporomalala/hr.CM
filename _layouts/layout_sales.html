@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-		<main attr-slug="giselle-nfuto">
+		<main attr-slug="giselle-nfuto" class="is-dashboard">
 			<header class="header">
 				<hgroup class="header-hgroup">
 					<h1 class="header-hgroup-h1">Corporo <br />Malala</h1>
@@ -11,10 +11,18 @@ layout: default
 				</hgroup>
 				
 				<nav class="header-nav">
-					<div>
-						<span class="u-btn">&star;<span>Dashboard</span></span>
-						<span class="u-btn">&star;<span>Products Catalog</span></span>
-						<span class="u-btn">&star;<span>Payslips</span></span>
+					<div class="header-nav-main">
+						<span class="header-nav-main-button u-btn is-dashboard" onclick="doNav(this)">&star;<span>Dashboard</span></span>
+						<span class="header-nav-main-button u-btn is-catalog" onclick="doNav(this)">&star;<span>Products Catalog</span></span>
+						<span class="header-nav-main-button u-btn is-payslips" onclick="doNav(this)">&star;<span>Payslips</span></span>
+						
+						<div class="header-nav-main-sub is-catalog">
+							<h4 class="section-title">Request Your Catalog</h4>
+						</div>
+						
+						<div class="header-nav-main-sub is-payslips">
+							<h4 class="section-title">Download 3-months Payslip</h4>
+						</div>
 					</div>
 
 					<span class="CSSspacer"></span>
@@ -28,7 +36,48 @@ layout: default
 			
 			<section>
 				<div>
-					<div class="progress">
+					<div class="dashboard">
+						<h5 class="section-title">Dashboard</h5>
+						
+						<div class="section-content">
+							<div class="dashboard-total">
+								<div>
+									<img src="/assets/images/icon_nasa_black.png" />
+									<div>
+										<span>$325k</span>
+										<p>of products sold since <span>January 2025<span></p>
+									</div>
+								</div>
+								
+								<p class="dashboard-total-percentage"><span class="dashboard-total-percentage-dash" style="width: 90%;"></span><span class="dashboard-total-percentage-text">90% sold</span></p>
+							</div>
+							<div class="dashboard-details">
+								<div>
+									<span>Electronics</span>
+									<span class="CSScentered">18/18 <br />products sold</span>
+									<span>$100M</span>
+								</div><div>
+									<span>Sold</span>
+									<span class="CSScentered">18/18 <br />products sold</span>
+									<span>$100M</span>
+								</div><div>
+									<span>Sold</span>
+									<span class="CSScentered">18/18 <br />products sold</span>
+									<span>$100M</span>
+								</div><div>
+									<span>Vegetables</span>
+									<span class="CSScentered">18/18 <br />products sold</span>
+									<span>$100M</span>
+								</div>
+								
+								<!--<div>
+									<img src="/assets/images/icon_nasa_black.png" />
+								</div>-->
+							</div>
+						</div>
+					</div>
+				
+					<!--<div class="progress">
 						<h5 class="section-title">Progress</h5>
 						<div class="progress-bar">
 							<div class="is-done"><span class="CSScentered">1</span><span>Lead</span></div>
@@ -36,33 +85,44 @@ layout: default
 							<div class="is-done is-here"><span class="CSScentered">3</span><span>Qualified</span></div>
 							<div><span class="CSScentered">4</span><span>Converted</span></div>
 						</div>
+					</div>-->
+				</div>
+				<div>
+					<div>
+						<h5 class="section-title">Title</h5>
 					</div>
 				</div>
-				<div>AAA</div>
-				<div>VVV</div>
+				<div>
+					<div>
+						<h5 class="section-title">Title</h5>
+					</div>
+				</div>
 				<div>
 					<div class="documents">
 						<h5 class="section-title">Documents</h5>
-						<div>{% for i in (1..4) %}
+						<div class="section-content">{% for i in (1..3) %}
 							<div>
 								<img src="/assets/images/icon_nasa_black.png" />
 								<p>Upload the application form</p>
 							</div>{% endfor %}
+							<div>
+								<img src="/assets/images/icon_nasa_black.png" />
+							</div>
 						</div>
 					</div>
 				</div>
 				<div>
-					<div class="historique">
-						<h5 class="section-title">Historique</h5>
+					<div class="records">
+						<h5 class="section-title">Records</h5>
 						
-						<div class="historique-date">
+						<div class="records-date">
 							<span>July</span>
 							<span>01</span><span>2025</span>
 						</div>
 						
-						<div class="historique-list"><div class="js-historique">
+						<div class="records-list"><div class="js-records">
 							<!--{% for i in (1..8) %}
-							<div class="historique-list-item is-{% if forloop.index == 1 or forloop.index == 2 %}green{% elsif forloop.index == 3 or forloop.index == 4 or forloop.index == 5 or forloop.index == 6 %}blue{% elsif forloop.index == 7 %}red{% else %}gray{% endif %}">
+							<div class="records-list-item is-{% if forloop.index == 1 or forloop.index == 2 %}green{% elsif forloop.index == 3 or forloop.index == 4 or forloop.index == 5 or forloop.index == 6 %}blue{% elsif forloop.index == 7 %}red{% else %}gray{% endif %}">
 								<div>
 									<span>Sent Sales Payment</span>
 									<span>June 18, 2025</span>
@@ -78,4 +138,6 @@ layout: default
 				<p>&copy; Copyrights 2025. All rights reserved: <a href="https://corporomalala.com" class="CSSbrand CSSunderline">Corporo Malala</a>.</p>
 				<p>Read the <a class="">terms & conditions</a>, <a class="">etc</a>, <a class="">etc</a>.</p>
 			</footer>
+			
+			<hr class="u-hr" />
 		</main>
