@@ -1,7 +1,7 @@
 /*** DATA ***/
 var vLoginPage = "/",
 	vDashboardPage = "/sales/";
-var aAccessCodes = [["123", "ABC"], ["admin", "Ella Malala"]];
+var aAccessCodes = [["123", "ABC"], ["admin", "Sephora Vula"]];
 
 var tagContainer4Notifications = document.querySelector(".js-uNotifications");
 /*** END DATA ***/

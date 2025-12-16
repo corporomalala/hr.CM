@@ -66,7 +66,8 @@
 		-->
 		
 	
-		
+		{% if page.url contains "sales" %}<link rel="stylesheet" href="/assets/stylesheets/library_illusionAI.css" />{% endif %}
+		<!--{% if page.url contains "sales" %}<link rel="stylesheet" href="/assets/stylesheets/library_illusionAI_test.css" />{% endif %}-->
 		<link rel="stylesheet" href="/assets/stylesheets/hr-dot-corporomalala-dot-online_{{ page.layout | split: '_' | last }}.css" />
 		<!--
 		<link rel="manifest" href="manifest.json" />
@@ -77,5 +78,6 @@
 		
 		<link rel="canonical" href="https://corporomalala.online" />
 		<link rel="shortlink" href="https://corporomalala.online" />
-
+<!--
   <script src="https://raw.githubusercontent.online/intobinary/CDN.IB/refs/heads/main/recaptcha.js"></script>
+  -->

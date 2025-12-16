@@ -1,0 +1,86 @@
+﻿
+/*===
+Into Binary (intobinary.org)
+&copy Coryright 2022 Into Binary. All rights reserved.
+Written for -- www.book-appointment.intobinary.org
+===*/
+
+
+
+/*=== LIBRARIES ===*/
+/*== [illusionAI] ==*/
+/*=== END LIBRARIES ===*/
+
+/*=== CUSTOM ===*/
+/*== [setup]==*/
+	/*** RESET ***/
+		*{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-family:inherit;vertical-align:baseline;color:#202020;font-size:1em;font-style:normal;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-transition:all 0.8s ease-in;}:focus,:active{outline:0;}html, body{background-color:#eee;min-height:100%;height:100%;font-family:sans-serif;font-size:1rem;position:relative;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;padding:0;line-height:1;}ul{list-style:none;}a{display:inline-block;text-decoration:none;background-color:transparent;}a img{border:none;}a, button, input[type="submit"]{cursor:pointer;}img{width:100%;}img::selection{fill:none;color:none;display:none;background:none;}input[type="text"], input[type="search"], input[type="email"], textarea{text-align:left !important;max-width:100%;}
+	/*** END RESET ***/
+		/*== [https://book-appointment-dot-intobinary-dot-org]==*/
+	/*** CANCEL ***/
+		.js-vexxiaChatBot-bubble,.js-vexxiaChatBot-bubble:hover,.js-vexxiaChatBot-bubble:active,.js-vexxiaChatBot-bubble:focus{outline:0;outline:none;-moz-outline-style:none;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after{pointer-events:none !important;}/*.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response::selection{fill:none;color:none;display:none;background:none;}*/
+	/*** END CANCEL ***/
+		
+	/*** INDEXES ***/
+		.js-particles{position:relative;z-index:10;}.footer,.header,.js-chatBot{position:relative;z-index:20;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after{z-index:30;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before{z-index:40;}
+	/*** END INDEXES ***/
+		
+	/*** COLORS ***/
+		 /* Color Lime Green: #03e960 / rgb(3, 233, 96) */.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:hover,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:active,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:focus{background-color:#03e960;}.u-golden-text{color:#03e960 !important;}.js-vexxiaChatBot-conversation ,.js-vexxiaChatBot-bubble--slideIn:before{border-color:#03e960;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:hover,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:active,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:focus,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response:after,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response{background-color:#202020;}.js-vexxiaChatBot-bubble,.js-vexxiaChatBot-bubble--typing:before{color:#202020;}.header-pics-logo:hover,.header-pics-logo:active,.header-pics-logo:focus{background-color:rgba(0, 0, 0, .2);}.footer,.header,.header-pics-portrait{border-color:rgba(0, 0, 0, .2);}body, html{background-color:#eee;}.header-pics-portrait{border-color:rgb(3,233,96);border-color:#03e960;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--slideIn,.footer,.header{background-color:#fff;}.js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-bubble--response *,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble:before{color:#fff;}
+	/*** END COLORS ***/
+		
+	/*** FONTS ***/
+		@font-face{font-family:"Hobo Std";src:url("./fonts/Hobo-Std/HoboStd.eot");/* IE9 Compat Modes */src:local("Hobo Std"), url("https://coffee.corporomalala.com/assets/fonts/Hobo-Std/HoboStd.eot?#iefix") format("embedded-opentype"), url("../fonts/Hobo-Std/HoboStd.otf.odft") format("opentype"), url("https://coffee.corporomalala.com/assets/fonts/Hobo-Std/HoboStd.svg") format("svg"), url("https://coffee.corporomalala.com/assets/fonts/Hobo-Std/HoboStd.ttf") format("truetype"), url("https://coffee.corporomalala.com/assets/fonts/Hobo-Std/HoboStd.woff") format("woff"), url("https://coffee.corporomalala.com/assets/fonts/Hobo-Std/HoboStd.woff2") format("woff2");font-weight:normal;font-style:normal;}body{font-family:'Lucida Sans Unicode';}.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response,.header-title,.quote-cite,.quote-q,.quote-q-symbol{font-family:"Hobo Std", Impact, sans-serif;}a{font-family:"New Times Roman", Georgia, serif;}.header-title,.quote-q{font-size:3em;}.quote-q-symbol{font-size:1.5em;}body{letter-spacing:.1em;}.js-vexxiaChatBot-bubble{line-height:1.5em;}.js-vexxiaChatBot-responses,.footer,.header,.header-pics{text-align:center;}.js-vexxiaChatBot-answers-placeholder,.js-vexxiaChatBot_bubble{text-align:left;}a{text-decoration:underline;}a{font-weight:bold;}
+	/*** END FONTS ***/
+		
+	/*** MEDIA ***/
+		.js-vexxiaChatBot-bubble--slideIn:before{background:url("../images/profile-photo-for-www-dot-book-appointment-dot-intobinary-dot-org.jpg") center center no-repeat;}.header-pics-portrait,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:hover,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:active,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:focus,.js-vexxiaChatBot-bubble--slideIn:after,.u-golden-img,.u-golden-text{background:url("../images/matrix-rain-for-www-dot-book-appointment-dot-intobinary-dot-org.png") center center no-repeat #03e960;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:hover,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:active,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response[contentEditable=true]:focus{background-image:none;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:hover,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:active,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:focus{background-size: cover !important;//color: #202020;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:hover,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:active,.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response:focus{background-size: initial !important;}.js-vexxiaChatBot-bubble--slideIn:after{//background-size: 25em 25em !important;}.header-pics-portrait{background-attachment:fixed;}.u-golden-text{background-attachment:fixed !important;}
+	/*** END MEDIA ***/
+		
+	/*** COMMONS ***/
+		body,.footer,.header,.js-vexxiaChatBot{padding:1em;}/*.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before,.js-vexxiaChatBot-bubble--slideIn:before{border-width:.2em;border-style:solid;}*/.footer,.header,.header-pics-portrait{border-width:0 0 .1em 0;border-style:solid;}.js-vexxiaChatBot-bubble,.footer,.header{box-shadow:0 .1em .1em rgba(0, 0, 0, .2);-webkit-box-shadow:0 .1em .1em rgba(0, 0, 0, .2);-moz-box-shadow:0 .1em .1em rgba(0, 0, 0, .2);-o-box-shadow:0 .1em .1em rgba(0, 0, 0, .2);}.header-pics-portrait,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after{box-shadow:0 .1em .1em rgba(0, 0, 0, .6);-webkit-box-shadow:0 .1em .1em rgba(0, 0, 0, .6);-moz-box-shadow:0 .1em .1em rgba(0, 0, 0, .6);-o-box-shadow:0 .1em .1em rgba(0, 0, 0, .6);}.js-vexxiaChatBot-bubble{border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after,.header-pics-portrait{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;}
+/** [layouts] **/
+		.l-midWrap{position:relative;width:100%;max-width:1400px;margin:0 auto;}
+/** [mixins] **/
+		
+/** [utils] **/
+		.u-golden-text{text-fill-color:transparent;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;-o-text-fill-color:transparent;background-clip:text;-webkit-background-clip:text;-moz-background-clip:text;-o-background-clip:text;}
+	/*** END COMMONS ***/
+		
+	/*** COMPONENTS ***/
+		*{}body{}.header{}.header-pics{display:inline-block;}.header-pics-logo,.header-pics-portrait{display:block;margin:0 auto;}.header-pics-logo-img,.header-pics-portrait{}.header-pics-logo-img{width:auto;height:3em;}.header-pics-portrait{width:10em;padding:.5em;//border-width:.5em;//border-style:solid;}.header-title{padding:.5em .1em;}.quote-cite{clear:both;margin:1em auto 0 auto;}.quote-q-symbol-left{float:left;}.quote-q-symbol-right{float:right;}
+	/*** END COMPONENTS ***/
+		
+	/*** ANIMATIONS ***/
+		
+	/*** END ANIMATIONS ***/
+		
+	/*** INTERACTIVITY ***/
+		.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble{cursor:pointer;}.js-vexxiaChatBot-answers-placeholder,.js-vexxiaChatBot-answers-placeholder:before{cursor:text;}.js-vexxiaChatBot-conversation.isNotAnonymous .js-vexxiaChatBot-bubble--response{margin-right:3em;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response:before,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response:after{display:none;}.js-vexxiaChatBot-conversation.isNotAnonymous .js-vexxiaChatBot-bubble--response:before,.js-vexxiaChatBot-conversation.isNotAnonymous .js-vexxiaChatBot-bubble--response:after{display:inline-block;}
+	/*** END INTERACTIVITY ***/
+		
+	/*** DEPENDENCIES ***/
+		
+/** [javascript] **/
+		.js-particles{position:absolute;top:0;left:0;position:fixed;width:100%;height:100%;}.js-vexxiaChatBot{/*position:relative;overflow:hidden;width:100%;*/}.js-vexxiaChatBot-answers-placeholder,.js-vexxiaChatBot-answers-placeholder:before{min-width:15em;}.js-vexxiaChatBot-answers-placeholder:before{content:'Type then hit Enter...';position:absolute;top:0;left:0;display:inline-block !important;opacity:.5;box-sizing:border-box;}.js-vexxiaChatBot-answers-placeholder:before,.js-vexxiaChatBot-bubble{padding:.5em 1em;}.js-vexxiaChatBot-bubble{display:inline-block;max-width:80%;transform:translate3d(-96px, 0, 0);transition:transform .75s cubic-bezier(.68, .01, .245, 1.13) .3s,color .3s ease-in-out .25s,min-width .35s ease-in-out,min-height .35s ease-in-out;}.js-vexxiaChatBot-bubble--fade{animation:font-fade .6s ease-in-out;}.js-vexxiaChatBot-bubble--response,.js-vexxiaChatBot-bubble--slideIn{transform:translate3d(0, 0, 0);margin:0;}.js-vexxiaChatBot-bubble--response{transition:transform .5s cubic-bezier(.68, .01, .245, 1.13) 0s;float:right;}.js-vexxiaChatBot-bubble--slideIn{margin-left:3em;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before,.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after{content:"";position:absolute;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:before{top:.35em;width:1.8em;height:1.8em;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble:after{top:0;width:2.5em;height:2.5em;}.js-vexxiaChatBot-bubble--slideIn:before{left:-2.625em;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response:before{right:-2.625em;}.js-vexxiaChatBot-bubble--slideIn:after{left:-3em;}.js-vexxiaChatBot-conversation .js-vexxiaChatBot-bubble--response:after{right:-3em;}.js-vexxiaChatBot-bubble--typing{color:transparent;max-height:calc(1em + 16px);white-space:none}.js-vexxiaChatBot-bubble--typing:before{content:'...';}.js-vexxiaChatBot-conversation{list-style:none;margin:0 0 20em 0;}.js-vexxiaChatBot-conversation-thread{padding:.5em 1em;overflow:auto;}.js-vexxiaChatBot-responses{position:absolute;bottom:0;left:0;right:0;padding:.5em;}.js-vexxiaChatBot-responses .js-vexxiaChatBot-bubble--response{float:none;margin:.5em;}
+/** [php] **/
+		
+	/*** END DEPENDENCIES ***/
+		
+	/*** MEDIA QUERIES ***/
+		
+/** [screen] **/
+		@media screen and (max-width:500px){}@media screen and (min-width:500px){body{font-size:1.1em;}}@media screen and (max-width:700px){.js-vexxiaChatBot-conversation-thread{padding-left:0;padding-right:0;}}@media screen and (min-width:700px){.header{display:table;direction:rtl;}.header-pics,.header-title{display:table-cell;direction:ltr;vertical-align:middle;}.header-title{width:100%;}}@media screen and (min-width:1200px){.l-midWrap{width:80%;}}
+/** [print] **/
+		@media print{*{display:none !important;background-color:transparent !important;background:none !important;}}
+	/*** END MEDIA QUERIES ***/
+		
+	/*** OVERRIDE ***/
+		
+	/*** END OVERRIDE ***/
+		
+	/*** TO DELETE ***/
+		
+	/*** END TO DELETE ***/
+		/*== [illusionAI]==*/
+/*===END CUSTOM===*/

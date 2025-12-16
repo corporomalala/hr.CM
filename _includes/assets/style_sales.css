@@ -18,10 +18,10 @@ main * {
 /*** END Z-INDEX ***/
 
 /*** COLORS ***/
-.records-list-item.is-green { color: green; }
-.records-list-item.is-blue { color: blue; }
-.records-list-item.is-red { color: red; }
-.records-list-item.is-gray { color: gray; }
+.records-list-item.is-green * { color: green; }
+.records-list-item.is-blue * { color: blue; }
+.records-list-item.is-red * { color: red; }
+.records-list-item.is-gray * { color: gray; }
 
 .footer p:nth-child(2) a { color: #AAA; }
 
@@ -33,6 +33,9 @@ main.is-dashboard span.is-dashboard,
 main.is-catalog span.is-catalog,
 main.is-payslips span.is-payslips,
 .header-nav div > span:hover { background-color: #AAA; }
+
+.dashboard-total-percentage-dash { background-color: green; }
+.dashboard-total-percentage-text { color: white; }
 /*** END COLORS ***/
 
 /*** FONTS ***/
@@ -102,13 +105,20 @@ main.is-payslips span.is-payslips,
 	
 	/*** .records ***/
 	.records-date span:nth-child(1) { display: block; }
+	
+	/*** .status ***/
+	.status-list div > span {
+		display: inline-block;
+		
+		margin-top: .5em;
+	}
 /*** END COMPONENTS ***/
 
 /*** INTERRACTIVITY ***/
 .u-btn { cursor: pointer; }
 
 .progress-bar span:nth-child(1) { background-color: white; }
-.progress-bar div.is-done span:nth-child(1) { background-color: #AAA }
+.progress-bar div.is-done span:nth-child(1) { background-color: #AAA; }
 .progress-bar div.is-here span:nth-child(1) { background-color: black; color: white; }
 
 .progress-bar div:before { border-color: white; }
@@ -168,16 +178,25 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 	section { flex: 1; }
 
 	section { display: grid; }
-	section { grid-template-columns: 50% 29em auto; }
+	section { grid-template-columns: 49% 29em auto; }
 	
+	section { grid-template-rows: auto 1fr auto; padding-bottom: 1em; }
+	section > div:nth-child(1) { grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; }
+	section > div:nth-child(2) { grid-column-start: 1; grid-row-start: 2; }
+	section > div:nth-child(3) { grid-column-start: 2; grid-row-start: 2; grid-row-end: 4; }
+	section > div:nth-child(4) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; }
+	section > div:nth-child(5) { grid-column-start: 3; grid-row-start: 1; grid-row-end: 4; }
+	
+	/* v2:
 	section { grid-template-rows: auto 1fr auto; padding-bottom: 1em; }
 	section > div:nth-child(1) { grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; }
 	section > div:nth-child(2) { grid-column-start: 1; grid-row-start: 2; }
 	section > div:nth-child(3) { grid-column-start: 2; grid-row-start: 2; }
 	section > div:nth-child(4) { grid-column-start: 1; grid-column-end: 3; grid-row-start: 3; }
 	section > div:nth-child(5) { grid-column-start: 3; grid-row-start: 1; grid-row-end: 4; }
+	*/
 	
-	/*
+	/* v1:
 	section { grid-template-rows: 1fr auto; padding-bottom: 1em; }
 	section > div:nth-child(1) { grid-column-start: 1; grid-row-start: 1; }
 	section > div:nth-child(2) { grid-column-start: 2; grid-row-start: 1; }
@@ -209,7 +228,6 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 	.dashboard-total-percentage-dash {
 		position: absolute; top: 0; left: 0;
 			height: 100%;
-		background-color: #AAA;
 	}
 	.dashboard-total > p span {
 		display: inline-block;
@@ -217,10 +235,12 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 	} 
 	
 	/*** COMPONENTS: .documents ***/
-	.documents > div { display: flex; }
+	.documents .section-content { display: flex; }
+	.documents .section-content > div {// flex: 1; }
+	.documents .section-content > div:last-child {// flex: 2 !important; }
 	
 	.documents img { width: 4em; }
-	.documents > div div:last-child img { width: 7em; }
+	.documents .section-content > div:last-child img { width: 7em; }
 	.documents p { width: 75%; margin-top: 1em; }
 	
 	/*** COMPONENTS: .header ***/
@@ -287,6 +307,17 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 }
 /*** MEDIA QUERIES ***/
 
+/*** LIBRARY ***/
+	/*** .js-illusionAI ***/
+	.illusionAI,
+	.js-illusionAI, .js-illusionAI_wrap { width: 100%; height: 100%; }
+	.js-illusionAI_wrap {
+		position: relative;
+		overflow-y: scroll;
+	}
+	.js-illusionAI { position: absolute; top: 0; left: 0; }
+/*** END LIBRARY ***/
+
 /*** DECORATION ***/
 	/*** .d-midWrap ***/
 	.d-midWrap {
@@ -324,6 +355,22 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 /*** CSS-HACKS ***/
 	.u-btn { padding: .5em .6em; }
 	.u-btn span { padding: 0 .25em; }
+	
+	.documents .u-btn {
+		display: inline-block !important;
+		margin-top: .5em;
+		
+		background-color: green;
+	}
+	.documents .u-btn,
+	.documents .u-btn * {
+		color: white;
+		font-size: .75em;
+	}
+	
+	.dashboard-total > div {
+		padding-bottom: .5em;
+	}
 /*** END CSS-HACKS ***/
 
 /*** TODO ***/
@@ -332,6 +379,12 @@ main.is-payslips .header-nav-main-sub.is-payslips { display: block !important; }
 
 /*** SANDBOX ***/
 	.section-title { text-transform: uppercase; }
+	
+.section-title {
+	padding: .5em;
+}
+
+.dashboard-total > div div:nth-child(2) { padding-left: 1em; }
 /*** END SANDBOX ***/
 
 /*** SYNCRONICITY ***/
