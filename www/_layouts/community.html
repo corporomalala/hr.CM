@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="js-html">
+	<head>
+		{% include components/meta-tags.html %}
+	</head>
+	
+	<body>
+		<main>
+			<!--
+			<nav class="menu">
+				MENU
+			</nav>
+			-->
+		
+			<header class="header">
+				<div class="header-details">
+					<span class="header-details-span">Fashion Runner</span>
+					<span class="header-details-span">Johannesburg, South Africa</span>
+				</div>
+				<h1 class="header-title">Blinky</h1>
+
+				<figure class="header-portrait d-cssCentered">
+					<img src="/assets/images/community/blinky.png" class="header-portrait-img" />
+				</figure>
+				
+				<blockquote class="header-quote">
+					<q class="header-quote-q">Some call me Blinky, some call me Rasta. I've got an eye for rare second-hand gems. I know the Johannesburg's fashion scene like the back of my hand. My clients trust me to find the good stuff. It's not just fashion, it's a lifestyle I run for.</q>
+					<cite class="header-quote-cite">Blinky</cite>
+				</blockquote>
+				
+				<nav class="header-contact">
+					<marquee class="header-contact-marquee">Partnership Cancelled in January.</marquee>
+					<a class="header-contact-a is-partnership" title="PARTNERSHIP IN DISCUSSION"><del>View our Partnership</del></a>
+					<a href="https://wa.me/+27789095228" class="header-contact-a">Text on Whatsapp</a>
+				</nav>
+			</header>
+			
+			<section class="content">
+				<div class="content-text">
+					<p class="content-text-p">Blinky is the Prince of Helderberg's fashion scene. He runs a door-to-door thrift store. And his clients know him not just for his hustle, but for his uncanny ability to spot vintage Levi's, rare sneakers, or timeless leather jackets.</p>
+				</div>
+			
+				<hgroup class="content-roles">
+					<h2 class="content-roles-title">Fashion Hunter</h2>
+					<h2 class="content-roles-title">Vintage Stylist</h2>
+					<!--
+					<h2 class="content-roles-title">Preloved Store</h2>
+					-->
+				</hgroup>
+				
+				<div class="content-gallery">{% for i in (1..4) %}
+					<img src="/assets/images/community/blinky_item-{{ i }}.png" class="content-gallery-img" />{% endfor %}
+				</div>
+				
+				<footer class="content-footer">&copy; Copyrights 2024: <a href="https://corporomalala.com" class="content-footer-a">Corporo Malala</a>. All rights reserved.</footer>
+			</section>
+		</main>
+	</body>
+</html>

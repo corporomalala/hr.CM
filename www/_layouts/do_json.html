@@ -1,0 +1,10 @@
+---
+---
+{ {% assign vSlug = page.name | remove: '.json' %}{% for file in site.data.sales[vSlug] %}{% for data in file %}
+	"{{ data[0] }}": { {% for content in data[1] %}{% if data[0] == "records" or data[0] == "archives" %}{% for contentHistorique in content %}
+		"{{ contentHistorique[0] }}": ["{{ contentHistorique[1][0] }}", "{{ contentHistorique[1][1] }}"]{% endfor %}{% endif %}{% if data[0] == "status" %}{% for contentStatus in content %}
+		"{{ contentStatus[0] }}": { {% for contentStatusInner in contentStatus[1] %}{% assign tempVar = contentStatusInner | split: "" | last %}
+			{{ contentStatusInner | replace: "=>", ": " |  replace: "{", "" | remove: tempVar }}{% if forloop.last == false %},{%endif %} {% endfor %}
+		}{% endfor %}{% endif %}{% if forloop.last == false %},{%endif %}{% endfor %}
+	}{% endfor %}{% if forloop.last == false %},{%endif %}{% endfor %}
+}

@@ -1,0 +1,7 @@
+---
+---
+/*** RESET ***/
+{% include assets/reset.css %}
+/*** END RESET ***/
+
+{% include assets/style_welcome.css %}

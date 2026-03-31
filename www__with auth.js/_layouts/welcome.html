@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<form onsubmit="handleLogin(event)">
+  <input id="username" placeholder="username" required>
+  <button type="submit">Login</button>
+</form>
+
+<script src="auth.js"></script>
+<script>
+  Auth.redirectIfLoggedIn();
+
+  function handleLogin(e) {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value;
+
+    // minimal validation
+    if(username){
+      Auth.login(username);
+    }
+  }
+</script>

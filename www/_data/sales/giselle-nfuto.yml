@@ -1,0 +1,29 @@
+- "records":
+  - "November 18, 2025": ["Requested Payslip", "green"]
+  - "November 17, 2025": ["Sent Sales Payment", "green"]
+  - "November 9, 2025": ["Expense Reimbursements", "red"]
+  - "September 15, 2025": ["Salary Notifications", "blue"]
+  - "September 14, 2025": ["Commission Payments", "green"]
+  - "September 12, 2025": ["Sent Sales Payment", "green"]
+  - "September 11, 2025": ["Sent Sales Payment", "gray"]
+- "status":
+  - 1:
+    - "Complete Verification Process": ["false", "Text 1AAA"]
+    - "Sell your First Product": ["false", "Text 1AAA"]
+  - 2:
+    - "Complete Sales Training": ["false", "Text 1AAA"]
+    - "Make First 10 Sales": ["false", "Text 1AAA"]
+    - "Invite a Friend": ["false", "Text 1AAA"]
+  - 3:
+    - "Get your First Subscription": ["false", "Text 2AAA"]
+    - "Request a Profile on our Website": ["false", "Text 3AAA"]
+  - 4:
+    - "Create a Facebook Account": ["false", "Text 3BBB"]
+  - 5:
+    - "Maintain 4.5+ rating": ["false", "Text 1AAA"]
+  - 6:
+    - "Achieve R10,000 in sales": ["false", "Text 1AAA"]
+    - "Request a custom 1-product store website": ["false", "Text 4AAA"]
+- "archives":
+  - "June 12, 2025": ["Sent Sales Payment", "red"]
+  - "June 11, 2025": ["Sent Sales Payment", "gray"]

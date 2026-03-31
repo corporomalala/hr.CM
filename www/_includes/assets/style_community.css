@@ -1,0 +1,155 @@
+/*** CANCEL ***/
+body, html { width: 100%; height: 100%; }
+main { min-height: 100%; }
+/*** END CANCEL ***/
+
+/*** COLORS ***/
+.header { background-color: black; }
+.header-contact-a.is-partnership { color: black !important; }
+
+.header-contact-a.is-partnership { background-color: white !important; }
+.header,
+.header a { color: white; }
+.header-contact-a,
+.header-portrait-img { border-color: white; }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+@font-face{
+	font-family:"Megatech Alt";src:url("../../assets/fonts/MegatechAlt.ttf");/*src:url("../../assets/fonts/ALPHABETH.eot") format("embedded-opentype"),url("../../assets/fonts/ALPHABETH.woff2") format("woff2"),url("../../assets/fonts/ALPHABETH.woff") format("woff"),url("../../assets/fonts/ALPHABETH.ttf") format("trutype"),url("../../assets/fonts/ALPHABETH.svg") format("svg");*/}
+@font-face{ font-family:"Arial Black";src:url("../../assets/fonts/ariblk.ttf"); }
+
+* { font-family: "Arial Black"; }
+.content-footer-a,
+.content-roles-title,
+.header-title { font-family: "Megatech Alt"; }
+
+.header-title { font-size: 3em; }
+.content-roles-title { font-size: 1.9em; }
+
+main { text-align: center; }
+.header-details-span:nth-child(1) { text-align: left; }
+.header-details-span:nth-child(2) { text-align: right; }
+.content-footer-a {// text-decoration: underline; }
+.header-details-span { vertical-align: top; }
+/*** END FONTS ***/
+
+/*** UTILITIES ***/
+	/*** .u-polaroid ***/
+	.u-polaroid { 
+		border-width: .75em .75em 2.5em .75em !important; border-style: solid !important;
+		border-color: white !important;
+	}
+/*** END UTILITIES ***/
+
+/*** COMPONENTS ***/
+	/*** COMMONS ***/
+	.content,
+	.header { padding: 2.5vw; }
+	.content-roles-title,
+	.content-text,
+	.header-quote,
+	.header-title { padding: 2.5vw 0; }
+	.content-gallery { margin: 2.5vw 0; }
+/*** END COMPONENTS ***/
+
+/*** PAGE: Welcome ***/
+	/*** .content ***/
+	.content-gallery { display: flex; }
+	
+	.content-gallery {
+		border-width: .25em; border-style: solid;
+	}
+	.content-gallery-img {
+		width: 25%;
+		border-width: .25em; border-style: solid;
+	}
+
+	/*** .header ***/
+	.header-contact-a {
+		width: 47.5%;
+		padding: 1em 0;
+		border-width: .19em; border-style: solid;
+	}
+	
+	.header-details-span {
+		width: 47.5%;
+		display: inline-block;
+	}
+	
+	.header-portrait-img {
+		width: auto; height: 35vh;
+		border-width: .75em; border-style: solid;
+	}
+/*** END PAGE: Welcome ***/
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 50em) {
+	/*** FONTS ***/
+	body { font-size: 14px; }
+	
+	.header,
+	.content {// min-height: 100vh; }
+	.content-roles,
+	.header-portrait { margin: 1.9em 0; }
+}
+@media screen and (min-width: 50em) {
+	/*** fonts ***/
+	body { font-size: 16px; }
+	
+	/*** PAGE: WELCOME ==> COMMONS ***/
+	main,
+	.content,
+	.header { display: flex; }
+	.content,
+	.header { flex-direction: column; }
+	.content,
+	.content-roles,
+	.header,
+	.header-portrait { flex: 1; }
+	
+	.content,
+	.header { max-height: 100vh; overflow: auto; }
+	
+	/*** PAGE: WELCOME ==> .menu ***/
+	.menu {
+		position: absolute; top: 0; right: 0;
+		width: 50%;
+		
+		border: 1px solid purple;
+	}
+}
+
+@media screen and (min-width: 100em) {
+	/*** fonts ***/
+	body { font-size: 21px; }
+}
+/*** MEDIA QUERIES ***/
+
+/*** DECORATION ***/
+	/*** .d-cssCentered ***/
+	.d-cssCentered {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/*** .d-midWrap ***/
+	.d-midWrap {
+		max-width: 75em;
+		margin: 0 auto;
+	}
+/*** END DECORATION ***/
+
+/*** SANDBOX ***/
+.header-contact {
+	position: relative;
+}
+.header-contact-marquee {
+	position: absolute; top: -1em; right: 75%;
+	width: 25%;
+	padding: .5em;
+	background-color: #AAA;
+	color: black;
+}
+/*** END SANDBOX ***/
