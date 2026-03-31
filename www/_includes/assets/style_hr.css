@@ -35,9 +35,9 @@ main { text-align: center; }
 /*** MEDIA ***/
 .header-ad a { background-image: url("/assets/images/icon_whatsapp_black.png"); }
 .header-ad a {
-	background-position: .5em center;
+	background-position: 1em center;
 	background-repeat: no-repeat;
-	background-size: auto 70%;
+	background-size: auto 50%;
 }
 /*** END MEDIA ***/
 
@@ -81,7 +81,7 @@ main { text-align: center; }
 		padding: 4em 0;
 	}
 	.header-ad a {
-		padding: 1em; padding-left: 4em;
+		padding: 1em 1.5em; padding-left: 4em;
 		margin: 1em;
 		
 		background-color: green;
